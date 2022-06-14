@@ -14,7 +14,10 @@ class TripController extends Controller
      */
     public function index()
     {
-        //
+        $trips = Trip::all();
+        //$houses = House::limit(3)->get(); <---SOLO 3 RISULTATI
+        //dd($houses);
+        return view('trips.index', compact('trips'));
     }
 
     /**
@@ -35,7 +38,7 @@ class TripController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
     }
 
     /**
@@ -46,7 +49,9 @@ class TripController extends Controller
      */
     public function show(Trip $trip)
     {
-        //
+
+        //dd($trip);
+        return view('trips.show', compact('trip'));
     }
 
     /**

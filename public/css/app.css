@@ -12173,3 +12173,18 @@ fieldset:disabled .btn {
   }
 }
 
+.trip {
+  display: flex;
+  flex-direction: column;
+}
+
+.trip .destination {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.trip img {
+  max-width: 100%;
+  min-height: 250px;
+}
+

@@ -14,3 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'PageController@index')->name('home');
+Route::get('/trips', 'TripController@index')->name('trips.index');
+Route::get('/trips/{trip}', 'TripController@show')->name('trips.show');
