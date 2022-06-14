@@ -45,6 +45,7 @@ class TripSeeder extends Seeder
             $new_trip->price = $trip['price'];
             $new_trip->image = $trip['image'];
             $new_trip->places = $trip['places'];
+            $new_trip->save();
         }
     }
 }
